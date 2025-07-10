@@ -645,6 +645,9 @@ section h2 {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
   }
+  .hero {
+    padding-top: 90px;
+  }
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
