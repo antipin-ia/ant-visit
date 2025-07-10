@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ant-visit/static/css/main.934eb52c.css",
+    "main.css": "/ant-visit/static/css/main.a5fac674.css",
     "main.js": "/ant-visit/static/js/main.ebcd1a88.js",
     "static/js/453.7a93f79b.chunk.js": "/ant-visit/static/js/453.7a93f79b.chunk.js",
     "index.html": "/ant-visit/index.html",
-    "main.934eb52c.css.map": "/ant-visit/static/css/main.934eb52c.css.map",
+    "main.a5fac674.css.map": "/ant-visit/static/css/main.a5fac674.css.map",
     "main.ebcd1a88.js.map": "/ant-visit/static/js/main.ebcd1a88.js.map",
     "453.7a93f79b.chunk.js.map": "/ant-visit/static/js/453.7a93f79b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.934eb52c.css",
+    "static/css/main.a5fac674.css",
     "static/js/main.ebcd1a88.js"
   ]
 }
