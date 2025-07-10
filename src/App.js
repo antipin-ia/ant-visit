@@ -575,7 +575,7 @@ function App() {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Иван Антипин. Все права защищены.</p>
+          <p>&copy; 2025 Иван Антипин. Все права защищены.</p>
           <p>Создано с ❤️ на React</p>
         </div>
       </footer>
