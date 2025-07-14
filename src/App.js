@@ -87,7 +87,7 @@ function App() {
           >
             <h1>Привет, я <span className="highlight">Иван Антипин</span></h1>
             <h2>Frontend Developer React + Go</h2>
-            <p>Middle+ разработчик с 2.5 годами опыта в создании современных веб-приложений. Специализируюсь на React, TypeScript и микросервисной архитектуре.</p>
+            <p>Middle+ разработчик с 3 годами опыта в создании современных веб-приложений. Специализируюсь на React, TypeScript и микросервисной архитектуре.</p>
             <motion.button 
               className="cta-button"
               onClick={() => scrollToSection('contact')}
@@ -220,7 +220,7 @@ function App() {
                   <div>
                     <h3>Яндекс (Недвижимость)</h3>
                     <p className="position">Frontend-разработчик</p>
-                    <p className="period">Декабрь 2024 — Май 2025 (6 месяцев)</p>
+                    <p className="period">Сентябрь 2024 — Май 2025 (10 месяцев)</p>
                   </div>
                 </div>
               </div>
