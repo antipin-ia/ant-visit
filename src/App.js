@@ -108,7 +108,7 @@ function App() {
               <div className="code-line">  name: "Иван Антипин",</div>
               <div className="code-line">  age: 23,</div>
               <div className="code-line">  role: "Frontend Developer",</div>
-              <div className="code-line">  experience: "2.5 года",</div>
+              <div className="code-line">  experience: "3 года",</div>
               <div className="code-line">  location: "Москва",</div>
               <div className="code-line">  skills: ["React", "TypeScript", "Node.js"],</div>
               <div className="code-line">  passion: "Создание качественных продуктов"</div>
