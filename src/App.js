@@ -174,7 +174,7 @@ function App() {
                   className="stat"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <h3>2.5</h3>
+                  <h3>3</h3>
                   <p>Года опыта</p>
                 </motion.div>
                 <motion.div 
