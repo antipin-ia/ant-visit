@@ -30,7 +30,7 @@ export function Header({ onNavigate, activeSection }) {
           <Code className="logo-icon" />
           <span>Ant-Visit</span>
         </motion.a>
-        <nav className="nav" aria-label="Основная навигация">
+        <nav className="nav" aria-label={t.a11y?.navLabel || 'Navigation'}>
           {navItems.map((item) => (
             <motion.button
               key={item.id}
@@ -53,7 +53,7 @@ export function Header({ onNavigate, activeSection }) {
           </button>
           <ThemeToggle />
           <button className="hire-me" onClick={() => onNavigate('contact')}>
-            Hire me
+            {t.cta?.hireMe || 'Hire me'}
           </button>
         </div>
       </div>

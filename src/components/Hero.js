@@ -8,7 +8,6 @@ export function Hero({ onScrollNext }) {
   const { t } = useI18n();
   return (
     <section id="hero" className="hero">
-      <a href="#main" className="skip-link">Пропустить к контенту</a>
       <div className="hero-content">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -17,7 +16,7 @@ export function Hero({ onScrollNext }) {
           className="hero-text"
         >
           <h1>
-            Привет, я <span className="highlight">{personalInfo.shortName}</span>
+            {t.hero.greetingPrefix} <span className="highlight">{personalInfo.shortName}</span>
           </h1>
           <h2>{t.hero.role}</h2>
           <p>{t.hero.summary}</p>

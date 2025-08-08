@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { skills } from '../data/skills';
 import { useI18n } from '../i18n';
+import Radar from './TechRadar';
 
 export function Skills() {
   const { t } = useI18n();
@@ -12,8 +13,7 @@ export function Skills() {
     { title: t.skills.tools, items: skills.tools },
   ];
 
-  // Small showcase: interactive skill filter highlight (no heavy state)
-  const [hovered, setHovered] = React.useState(null);
+  // reserved for future interactive highlight
 
   return (
     <section id="skills" className="skills" aria-labelledby="skills-title">
@@ -47,6 +47,13 @@ export function Skills() {
             </motion.div>
           ))}
         </div>
+        <Radar
+          title={t.skills.radar.title}
+          axes={t.skills.radar.axes}
+          values={t.skills.radar.values}
+          legendLow={t.skills.radar.legendLow}
+          legendHigh={t.skills.radar.legendHigh}
+        />
       </motion.div>
     </section>
   );

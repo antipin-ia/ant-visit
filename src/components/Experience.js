@@ -17,7 +17,7 @@ export function Experience() {
       >
         <h2 id="experience-title">{t.experience.title}</h2>
         <div className="experience-timeline">
-          {experiences.map((exp, idx) => (
+          {(t.experience.items || experiences).map((exp, idx) => (
             <motion.div
               key={exp.company}
               className="experience-item"

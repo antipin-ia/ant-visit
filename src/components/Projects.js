@@ -23,7 +23,7 @@ export function Projects() {
       >
         <h2 id="projects-title">{t.projects.title}</h2>
         <div className="projects-grid">
-          {projects.map((p, idx) => {
+          {(t.projects.items || projects).map((p, idx) => {
             const Icon = iconMap[p.icon] ?? Code;
             return (
               <motion.div

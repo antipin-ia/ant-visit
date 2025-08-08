@@ -1,4 +1,8 @@
 export const ru = {
+  a11y: {
+    skipToContent: 'Пропустить к контенту',
+    navLabel: 'Основная навигация',
+  },
   nav: {
     about: 'Обо мне',
     experience: 'Опыт',
@@ -7,6 +11,7 @@ export const ru = {
     contact: 'Контакты',
   },
   hero: {
+    greetingPrefix: 'Привет, я',
     role: 'Frontend Developer React + Go',
     summary:
       'Middle+ разработчик с 3 годами опыта в создании современных веб-приложений. Специализируюсь на React, TypeScript и микросервисной архитектуре.',
@@ -27,15 +32,110 @@ export const ru = {
       english: 'Английский',
     },
   },
-  experience: { title: 'Опыт работы' },
+  experience: {
+    title: 'Опыт работы',
+    items: [
+      {
+        company: 'Яндекс (Недвижимость)',
+        role: 'Frontend-разработчик',
+        period: 'Сентябрь 2024 — Май 2025 (10 месяцев)',
+        summary: 'Занимался full-stack разработкой. Отвечал за весь цикл работы журнала недвижимости:',
+        bullets: [
+          'Разработка нового функционала и интеграции с основными сервисами на основе микрофронтендов и микросервисов',
+          'Работа с внутренней БД на основе MySQL, PostgreSQL и REST API',
+          'Поддержка устойчивости и производительности, создание тестов (e2e, unit) и документации',
+          'Оптимизация SEO и метрик пользователя для сбора статистики',
+          'Работа с API (REST, GraphQL)',
+        ],
+        achievements:
+          'Перенес микросервис журнала недвижимости в основную монорепу журналов, избавился от 45% устаревшего кода, оптимизировал middleware и хуки, настроил SSR и авторизацию с деплоем, переработал роутинг, что ускорило сбор ссылок в 1.5 раза. Результатом работы стало сокращение затрат на поддержку на 50%.',
+        tech: [
+          'TypeScript',
+          'React',
+          'SSR',
+          'Webpack',
+          'Redux',
+          'Node.js',
+          'Express',
+          'Next.js',
+          'MySQL',
+          'PostgreSQL',
+          'Redis',
+          'Docker',
+          'CI/CD',
+        ],
+      },
+      {
+        company: 'ООО Белая Доска',
+        role: 'Fullstack Developer',
+        period: 'Май 2022 — Апрель 2024 (2 года)',
+        summary:
+          'Разработка онлайн-доски Microboard (аналог Miro) с поддержкой многопользовательского режима и интеграцией ИИ:',
+        bullets: [
+          'Реализация ключевых фич: динамические направляющие для выравнивания объектов, совместная работа в реальном времени',
+          'Интеграция ИИ-модуля: проектирование архитектуры, UI для генерации контента/изображений',
+          'Оптимизация стабильности: внедрение e2e-тестов (Playwright), устранение десинхронизации сессий',
+          'Настройка инфраструктуры: CI/CD пайплайны, Docker-контейнеризация, кастомизация Webpack',
+          'Миграция проекта в OpenSource: адаптация кодовой базы, документация, деплой',
+        ],
+        achievements:
+          'Снизил десинхронизацию данных в многопользовательском режиме на 70% через оптимизацию WebSocket-логики. Успешно внедрил ИИ-генерацию контента с поддержкой 1000+ RPS и интеграцией в canvas-движок. Обеспечил плавный переход проекта на OpenSource с полной автоматизацией CI/CD и деплоя.',
+        tech: [
+          'TypeScript',
+          'React',
+          'Canvas',
+          'WebSockets',
+          'Node.js',
+          'Redis',
+          'Next.js',
+          'Docker',
+          'Webpack',
+          'Playwright',
+          'CI/CD',
+        ],
+      },
+    ],
+  },
   skills: {
     title: 'Мои навыки',
     frontend: 'Frontend',
     backend: 'Backend & Базы данных',
     api: 'API & Интеграции',
     tools: 'Инструменты & DevOps',
+    radar: {
+      title: 'Тех-радар',
+      axes: ['React', 'TypeScript', 'Архитектура', 'Тестирование', 'Redux', 'Node.js'],
+      values: [5, 5, 5, 4, 5, 5],
+      legendLow: 'Новичок',
+      legendHigh: 'Эксперт',
+    },
   },
-  projects: { title: 'Мои проекты' },
+  projects: {
+    title: 'Мои проекты',
+    items: [
+      {
+        title: 'Журнал недвижимости Яндекс',
+        description:
+          'Full-stack разработка журнала недвижимости с микрофронтендами и микросервисами. Оптимизация производительности и SEO.',
+        tech: ['React', 'TypeScript', 'Node.js', 'SSR', 'GraphQL'],
+        icon: 'globe',
+      },
+      {
+        title: 'Microboard (аналог Miro)',
+        description:
+          'Онлайн-доска с многопользовательским режимом и интеграцией ИИ. Поддержка реального времени и генерации контента.',
+        tech: ['React', 'Canvas', 'WebSockets', 'TypeScript', 'AI Integration'],
+        icon: 'database',
+      },
+      {
+        title: 'OpenSource Migration',
+        description:
+          'Миграция проекта в OpenSource с полной автоматизацией CI/CD, документацией и деплоем.',
+        tech: ['Docker', 'CI/CD', 'Webpack', 'Playwright', 'Documentation'],
+        icon: 'code',
+      },
+    ],
+  },
   contact: {
     title: 'Связаться со мной',
     email: 'Email',
@@ -49,5 +149,6 @@ export const ru = {
   footer: { madeWith: 'Создано с ❤️ на React' },
   toggles: { theme: 'Тема', lang: 'Язык' },
   copy: { copy: 'Скопировать', copied: 'Скопировано!' },
+  cta: { hireMe: 'Нанять меня' },
 };
 
